@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sales</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="Info">
+            <div class="More">
+                <img width="20px" src="crown.png" alt="This is a crown picture";style=border-radius:50%>
+                <div><span>KING AND QUEEN </span></div>
+                <div><span>CHECK USER </span></div>
+                <div><span>Hotline:090300746</span></div>
+            </div>    
+        </div>
+        <div class="Menu">
+            <div class="logo">
+                <img width="60px" height= "60px" src="kingshoes.png" alt="This is a logo of the website">
+                <div class="title">
+                    <h4>KINGSHOES.VN</h4>
+                    <span>You're King in Your Way!!!</span>
+                </div>
+            </div>
+            <div class="Help">
+                <p>GIỚI THIỆU</p>
+                <p>NIKE</p>
+                <p>ADIDAS</p>
+                <p>JORDAN</p>
+                <p>YEZZY</p>
+                <p>ORTHER BRANDS</p>
+                <p>SALE</p>
+                <p>DÂY GIÀY</p>
+                <p>SPA GIÀY</p>
+                <p>LIÊN HỆ</p>
+            </div>
+            <div class="button">
+                <p style="color:black; font-size: 12px;padding: 10px;">Nhập từ cần tìm </p>
+            </div>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="pic1.png" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="pic2.png" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="pic3.png" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>          
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </div>
+    <div class="content2">
+        <div class="Icon"></div>
+        <div class="Service">
+            <p>CAM KẾT CHÍNH HÃNG </p>
+            <p>GIAO HÀNG HỎA TỐC</p>
+            <p>Hỗ trợ 24/24</p>
+        </div>
+        <div class="bordertext">
+            <p>100% Authenic</p>
+            <p>Express Delivery</p>
+            <p>Supporting 24/24</p>
+        </div>
+        <div class="text">
+            <p>Cam kết sản phẩm chính hãng từ Châu Âu,Châu Mỹ...</p>
+            <p>Ship hỏa tốc 1h nhận hàng trong nội thành HCM</p>
+            <p>Gọi ngay 0909300746</p>
+        </div>
+    </div>
+    <div class="content3">
+        <div class="newtext">
+           <h2>-SẢN PHẨM MỚI</h2> 
+        </div>
+        <div class="allcard">
+            <div class="card">
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h.1.1.png" alt="Nike Air Max">
+                    <p>NIKE AIR MAX EXCEE</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>2,900,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h1.2.png" alt="NIKE REVOLUTION">
+                    <p>NIKE REVOLUTION</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>1,900,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h1.3.png" alt="AIR FORCE 1">
+                    <p>AIR FORCE 1</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,200,000 đ</p>
+                    </div>
+                </div>            
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h1.4.png" alt="NIKE AIR MAX 90 EC">
+                    <p>NIKE AIR MAX 90 EC</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,200,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h1.5.png" alt="JORDAN STADIUM 90">
+                    <p>JORDAN STADIUM 90</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,900,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h1.6.png" alt="JORDAN 1 RETRO HIGH OG UNIVERSITY RED ...">
+                    <p>JORDAN 1 RETRO HIGH OG UNIVERSITY RED ...</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>5,800,000 đ</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="card">
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h2.1.png" alt="NIKE AIR FORCE 1 WHITE PINK">
+                    <p>NIKE AIR FORCE 1 WHITE PINK</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,600,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h2.2.png" alt="NIKE TERMINATOR LOW PHANTOM">
+                    <p>NIKE TERMINATOR LOW PHANTOM</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,900,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h2.3.png" alt="NIKE AIR WINFLO 10">
+                    <p>NIKE AIR WINFLO 10</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>2,900,000 đ</p>
+                    </div>
+                </div>            
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h2.4.png" alt="ADIDAS NMD_G1">
+                    <p>ADIDAS NMD_G1</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>2,900,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h2.5.png" alt="ADIDAS PROPHERE GREY">
+                    <p>ADIDAS PROPHERE GREY</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>2,900,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h2.6.png" alt="NIKE AIR MAX 2017">
+                    <p>NIKE AIR MAX 2017</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,600,000 đ</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="card">
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h3.1.png" alt="NIKE AIR MAX COMMAND">
+                    <p>NIKE AIR MAX COMMAND</COMMand></p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,200,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h3.2.png" alt="NIKE QUEST 4">
+                    <p>NIKE QUEST 4</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>2,300,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h3.3.png" alt="ADIDAS NMD_S1">
+                    <p>ADIDAS NMD_S1</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>2,900,000 đ</p>
+                    </div>
+                </div>            
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h3.4.png" alt="THE VELOSAMBA VEGAN CYCLING">
+                    <p>THE VELOSAMBA VEGAN CYCLING</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>2,900,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h3.5.png" alt="AIR MAX 97 SILVER BULLET">
+                    <p>AIR MAX 97 SILVER BULLET</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>5,800,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h3.6.png" alt="NIKE ZOOM FLY 5">
+                    <p>NIKE ZOOM FLY 5</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,200,000 đ</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="card">
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h4.1.png" alt="NIKE PEGASUS 40">
+                    <p>NIKE PEGASUS 40</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,200,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h4.2.png" alt="NIKE PEGASUS 40">
+                    <p>NIKE PEGASUS 40</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,200,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h4.3.png" alt="AIR JORDAN 3 RETRO">
+                    <p>AIR JORDAN 3 RETRO</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>5,800,000 đ</p>
+                    </div>
+                </div>            
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h4.4.png" alt="AIR JORDAN 3 RETRO">
+                    <p>AIR JORDAN 3 RETRO</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,900,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h4.5.png" alt="ADIDAS 4DFWD 2">
+                    <p>ADIDAS 4DFWD 2</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>3,200,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h4.6.png" alt="YEEZY BOOST 350 V2 BELUGA REFLECTIVE">
+                    <p>YEEZY BOOST 350 V2 BELUGA REFLECTIVE</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>12,000,000 đ</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="card">
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h5.1.png" alt="YEEZY BOOST 700 V2 STATIC">
+                    <p>YEEZY BOOST 700 V2 STATIC</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>12,000,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h5.2.png" alt="DUNK HIGH AMBUSH">
+                    <p>DUNK HIGH AMBUSH</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>16,000,000 đ</p>
+                    </div>
+                </div>
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h5.3.png" alt="AIR JORDAN 1 LOW SB CHICAGO">
+                    <p>AIR JORDAN 1 LOW SB CHICAGO</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>4,800,000 đ</p>
+                    </div>
+                </div>            
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h5.4.png" alt="AIR JORDAN 1 HI TROPHY ROOM CHICAGO">
+                    <p>AIR JORDAN 1 HI TROPHY ROOM CHICAGO</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>60,000,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h5.5.png" alt="AIR ZOOM ALPHAFLY NEXT% FLYKNIT">
+                    <p>AIR ZOOM ALPHAFLY NEXT% FLYKNIT</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>4,800,000 đ</p>
+                    </div>
+                </div>    
+                <div class="totaltext">
+                    <img width="180px" height="200px" src="h5.6.png" alt="JORDAN 1 HIGH RETRO">
+                    <p>JORDAN 1 HIGH RETRO</p>
+                    <div>
+                        <div class="star"></div>
+                        <p>10,000,000 đ</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
